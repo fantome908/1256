@@ -33,8 +33,6 @@ public class MainMod {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
         String configDir = event.getModConfigurationDirectory().toString();
-        ConfigurationHandler.init(configDir);
-        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         ready = true;
 
         Display.setTitle("|| MCO-PVP || MINECRAFT PVP FACTION ||");
