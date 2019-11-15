@@ -4,11 +4,13 @@ import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import fr.mcopvp.mcopvp.proxy.commonProxy;
 import net.minecraft.entity.player.EntityPlayer;
 import org.lwjgl.opengl.Display;
 
@@ -44,4 +46,7 @@ public class MainMod {
             FMLCommonHandler.instance().bus().register(this);
         }
     }
+
+    @Mod.EventHandler
+    public void postInit(FMLPostInitializationEvent event){}
 }
