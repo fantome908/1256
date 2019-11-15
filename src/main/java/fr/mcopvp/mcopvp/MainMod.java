@@ -10,6 +10,7 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import fr.mcopvp.mcopvp.init.blockMod;
 import fr.mcopvp.mcopvp.proxy.commonProxy;
 import net.minecraft.entity.player.EntityPlayer;
 import org.lwjgl.opengl.Display;
@@ -30,6 +31,7 @@ public class MainMod {
     public void preInit(FMLPreInitializationEvent event){
         ready = true;
         Display.setTitle("|| MCO-PVP || MINECRAFT PVP FACTION ||");
+        blockMod.init();
     }
 
     @Mod.EventHandler
