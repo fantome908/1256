@@ -1,5 +1,6 @@
 package fr.mcopvp.mcopvp;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -29,5 +30,7 @@ public class MainMod {
     public void preInit(FMLPreInitializationEvent event){
         String configDir = event.getModConfigurationDirectory().toString();
         ConfigurationHandler.init(configDir);
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        ready = true;
     }
 }
