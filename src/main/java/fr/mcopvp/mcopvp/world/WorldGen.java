@@ -42,7 +42,7 @@ public class WorldGen implements IWorldGenerator {
     }
 
     private void GenerateOverWorld(World world, int i, int i1, Random random) {
-        addOre(blockMod.jade_ore, Blocks.stone, random, world, i, i1, 5, 7, 1, 3, 50);
+        addOre(blockMod.jade_ore, Blocks.stone, random, world, i, i1, 5, 7, 1, 3, 100);
     }
 
     private void Generatenether(World world, int i, int i1, Random random) {
