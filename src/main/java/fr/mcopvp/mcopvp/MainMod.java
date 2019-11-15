@@ -12,6 +12,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import fr.mcopvp.mcopvp.init.blockMod;
 import fr.mcopvp.mcopvp.proxy.commonProxy;
+import fr.mcopvp.mcopvp.world.WorldRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import org.lwjgl.opengl.Display;
 
@@ -33,6 +34,7 @@ public class MainMod {
         Display.setTitle("|| MCO-PVP || MINECRAFT PVP FACTION ||");
         blockMod.init();
         blockMod.register();
+        WorldRegister.mainRegistry();
     }
 
     @Mod.EventHandler
