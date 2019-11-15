@@ -32,6 +32,7 @@ public class MainMod {
         ready = true;
         Display.setTitle("|| MCO-PVP || MINECRAFT PVP FACTION ||");
         blockMod.init();
+        blockMod.register();
     }
 
     @Mod.EventHandler
