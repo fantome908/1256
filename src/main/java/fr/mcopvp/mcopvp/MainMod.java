@@ -24,17 +24,11 @@ public class MainMod {
     @SidedProxy(clientSide = References.CLIENT_PROXY, serverSide = References.SERVER_PROXY)
     public static commonProxy proxy;
 
-    @SubscribeEvent
-    @SideOnly(Side.CLIENT)
-    public void onTick(TickEvent.ClientTickEvent event) {}
-
     public static EntityPlayer player;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
-        String configDir = event.getModConfigurationDirectory().toString();
         ready = true;
-
         Display.setTitle("|| MCO-PVP || MINECRAFT PVP FACTION ||");
     }
 
