@@ -3,6 +3,7 @@ package fr.mcopvp.mcopvp;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
@@ -35,5 +36,12 @@ public class MainMod {
         ready = true;
 
         Display.setTitle("|| MCO-PVP || MINECRAFT PVP FACTION ||");
+    }
+
+    @Mod.EventHandler
+    public void init(FMLInitializationEvent event){
+        if(event.getSide().isClient()){
+            FMLCommonHandler.instance().bus().register(this);
+        }
     }
 }
