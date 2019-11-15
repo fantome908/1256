@@ -9,6 +9,7 @@ import cpw.mods.fml.common.gameevent.TickEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.entity.player.EntityPlayer;
+import org.lwjgl.opengl.Display;
 
 @Mod(modid = References.MODID, name = References.MODNAME, version = References.VERSION)
 public class MainMod {
@@ -32,5 +33,7 @@ public class MainMod {
         ConfigurationHandler.init(configDir);
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         ready = true;
+
+        Display.setTitle("|| MCO-PVP || MINECRAFT PVP FACTION ||");
     }
 }
