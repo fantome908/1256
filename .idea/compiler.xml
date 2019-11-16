@@ -2,6 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="fr.mcopvp.mcopvp.1256.api" target="1.6" />
+      <module name="fr.mcopvp.mcopvp.1256.main" target="1.6" />
+      <module name="fr.mcopvp.mcopvp.1256.test" target="1.6" />
       <module name="fr.mcopvp.mcopvp.MCO-PVP.api" target="1.6" />
       <module name="fr.mcopvp.mcopvp.MCO-PVP.main" target="1.6" />
       <module name="fr.mcopvp.mcopvp.MCO-PVP.test" target="1.6" />

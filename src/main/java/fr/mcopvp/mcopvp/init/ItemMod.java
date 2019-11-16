@@ -1,8 +1,6 @@
 package fr.mcopvp.mcopvp.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import fr.mcopvp.mcopvp.References;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
