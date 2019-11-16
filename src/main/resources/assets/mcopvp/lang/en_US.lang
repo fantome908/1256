@@ -1,2 +1,4 @@
 tile.jade_ore.name=Jade Ore
 tile.jade_block.name=Jade Block
+tile.crystal_ore.name=Crystal Ore
+item.jade.name=Jade
