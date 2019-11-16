@@ -9,6 +9,20 @@
       </configuration>
     </facet>
   </component>
+  <component name="McpModuleSettings">
+    <option name="mappingFiles">
+      <set>
+        <option value="C:\Users\bleda\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1558-1.7.10\srgs\mcp-notch.srg" />
+        <option value="C:\Users\bleda\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1558-1.7.10\srgs\mcp-srg.srg" />
+        <option value="C:\Users\bleda\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1558-1.7.10\srgs\notch-srg.srg" />
+        <option value="C:\Users\bleda\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1558-1.7.10\srgs\srg.exc" />
+        <option value="C:\Users\bleda\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1558-1.7.10\srgs\notch-mcp.srg" />
+        <option value="C:\Users\bleda\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1558-1.7.10\srgs\mcp.exc" />
+      </set>
+    </option>
+    <option name="mcpVersion" value="null_-1" />
+    <option name="minecraftVersion" value="1.7.10" />
+  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../src/api" />

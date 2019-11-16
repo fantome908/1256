@@ -17,4 +17,15 @@ public class ItemMod {
     public static void register(){
         GameRegistry.registerItem(Jade, "jade");
     }
+
 }
+
+    public static Item crystal;
+
+    public static void init (){
+        crystal = new Item().setUnlocalizedName("crystal").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(References.MODID + ":crystal");
+
+
+            public static void register(){ GameRegistry.registerItem(crystal, "crystal"); }
+
+
