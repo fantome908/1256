@@ -8,21 +8,15 @@ import java.util.Random;
 
 public class blockBasique extends Block {
     private Item drop;
-    private int quantitydrop = 1;
 
-    public blockBasique(Material p_i45394_1_, Item drop, int least_quantity, int most_quantity) {
+    public blockBasique(Material p_i45394_1_, Item drop) {
         super(p_i45394_1_);
         this.drop = drop;
-        //this.setHarvestLevel("pickaxe", 2);
+        this.setHarvestLevel("pickaxe", 2);
     }
 
     @Override
     public Item getItemDropped(int metadata, Random rand, int fortuneLevel) {
         return this.drop;
-    }
-
-    @Override
-    public int quantityDropped(int meta, int fortune, Random random) {
-        return this.quantitydrop;
     }
 }
