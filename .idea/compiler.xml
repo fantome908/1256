@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="fr.mcopvp.mcopvp.MCO-PVP.api" target="1.6" />
+      <module name="fr.mcopvp.mcopvp.MCO-PVP.main" target="1.6" />
+      <module name="fr.mcopvp.mcopvp.MCO-PVP.test" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

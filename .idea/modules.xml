@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MCO-PVP.iml" filepath="$PROJECT_DIR$/.idea/MCO-PVP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.iml" filepath="$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.api.iml" filepath="$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.test.iml" />
     </modules>
   </component>
 </project>
