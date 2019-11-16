@@ -10,13 +10,16 @@ import net.minecraft.creativetab.CreativeTabs;
 public class blockMod {
 
     public static Block jade_ore, jade_block;
+    public static Block crystal_ore, crystal_block;
 
     public static void init(){
         jade_ore = new blockBasique(Material.rock).setBlockName("jade_ore").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":jade_ore").setHardness(3).setResistance(20.0f);
         jade_block = new blockBasique(Material.rock).setBlockName("jade_block").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":jade_block").setHardness(3).setResistance(20.0f);
+        crystal_ore = new blockBasique(Material.rock).setBlockName("crystal_ore").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":crystal_ore").setHardness(3).setResistance(20.0f);
     }
     public static void register(){
         GameRegistry.registerBlock(jade_ore, jade_ore.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock(jade_block, jade_block.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(crystal_ore, crystal_ore.getUnlocalizedName().substring(5));
     }
 }
