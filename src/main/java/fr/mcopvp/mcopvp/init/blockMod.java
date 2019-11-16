@@ -3,6 +3,7 @@ package fr.mcopvp.mcopvp.init;
 import cpw.mods.fml.common.registry.GameRegistry;
 import fr.mcopvp.mcopvp.References;
 import fr.mcopvp.mcopvp.blocks.blockBasique;
+import fr.mcopvp.mcopvp.blocks.blockBasiqueNoItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -13,9 +14,9 @@ public class blockMod {
     public static Block crystal_ore, crystal_block;
 
     public static void init(){
-        jade_ore = new blockBasique(Material.rock).setBlockName("jade_ore").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":jade_ore").setHardness(3).setResistance(20.0f);
-        jade_block = new blockBasique(Material.rock).setBlockName("jade_block").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":jade_block").setHardness(3).setResistance(20.0f);
-        crystal_ore = new blockBasique(Material.rock).setBlockName("crystal_ore").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":crystal_ore").setHardness(3).setResistance(20.0f);
+        jade_ore = new blockBasique(Material.rock, ItemMod.Jade).setBlockName("jade_ore").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":jade_ore").setHardness(3).setResistance(20.0f);
+        jade_block = new blockBasiqueNoItem(Material.rock).setBlockName("jade_block").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":jade_block").setHardness(3).setResistance(20.0f);
+        crystal_ore = new blockBasique(Material.rock, ItemMod.crystal).setBlockName("crystal_ore").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":crystal_ore").setHardness(3).setResistance(20.0f);
     }
     public static void register(){
         GameRegistry.registerBlock(jade_ore, jade_ore.getUnlocalizedName().substring(5));
