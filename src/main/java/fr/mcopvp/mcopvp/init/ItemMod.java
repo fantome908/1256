@@ -8,24 +8,16 @@ import net.minecraft.item.Item;
 public class ItemMod {
 
 // je sais pas si sa fonction  XD
-    public static Item Jade;
+    public static Item Jade, crystal;
 
     public static void init(){
         Jade = new Item().setUnlocalizedName("jade").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(References.MODID + ":jade");
+        crystal = new Item().setUnlocalizedName("crystal").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(References.MODID + ":crystal");
     }
 
     public static void register(){
         GameRegistry.registerItem(Jade, "jade");
+        GameRegistry.registerItem(crystal, "crystal");
     }
 
 }
-
-    public static Item crystal;
-
-    public static void init (){
-        crystal = new Item().setUnlocalizedName("crystal").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(References.MODID + ":crystal");
-
-
-            public static void register(){ GameRegistry.registerItem(crystal, "crystal"); }
-
-
