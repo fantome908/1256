@@ -4,6 +4,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import fr.mcopvp.mcopvp.References;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 public class ItemMod {
@@ -11,18 +12,11 @@ public class ItemMod {
 // je sais pas si sa fonction  XD
     public static Item Jade;
 
-    public static void  (){
-        GameRegistry.registerItem (Jade);
+    public static void init(){
+        Jade = new Item().setUnlocalizedName("jade").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(References.MODID + ":jade");
     }
-    public static void (){
 
-        Item jade = Jade = new.setBlockName("Jade").setBlockTextureName(References.MODID + ":jade");
-
+    public static void register(){
+        GameRegistry.registerItem(Jade, "jade");
     }
-}
-    @SideOnly(Side.CLIENT)
-    private static void registerItemModels(){
-        ModelLoader.setCustomModelResourceLocation (Jade , 0, new ModelResourceLocation (Jade.02255 + ":Jade", "inventory"));
-
-
 }
