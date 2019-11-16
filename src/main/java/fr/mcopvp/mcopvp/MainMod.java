@@ -6,10 +6,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.TickEvent;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import fr.mcopvp.mcopvp.init.ItemMod;
 import fr.mcopvp.mcopvp.init.blockMod;
 import fr.mcopvp.mcopvp.proxy.commonProxy;
 import fr.mcopvp.mcopvp.world.WorldRegister;
@@ -35,6 +32,8 @@ public class MainMod {
         blockMod.init();
         blockMod.register();
         WorldRegister.mainRegistry();
+        ItemMod.init();
+        ItemMod.register();
     }
 
     @Mod.EventHandler
