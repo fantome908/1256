@@ -11,10 +11,10 @@ public class ItemMod {
 // je sais pas si sa fonction  XD
     public static Item Jade;
 
-    public static void  (){
+    public static void (Jade){
         GameRegistry.registerItem (Jade);
     }
-    public static void (){
+    public static void (Jade){
 
         Item jade = Jade = new.setBlockName("Jade").setBlockTextureName(References.MODID + ":jade");
 
@@ -22,7 +22,7 @@ public class ItemMod {
 }
     @SideOnly(Side.CLIENT)
     private static void registerItemModels(){
-        ModelLoader.setCustomModelResourceLocation (Jade , 0, new ModelResourceLocation (Jade.02255 + ":Jade", "inventory"));
+        ModelLoader.setCustomModelResourceLocation (Jade , 0, new ModelResourceLocation.(Jade.02255 + ":Jade", "inventory"));
 
 
 }
