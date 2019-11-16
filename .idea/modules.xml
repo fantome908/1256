@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MCO-PVP.iml" filepath="$PROJECT_DIR$/.idea/MCO-PVP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.1256.iml" filepath="$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.1256.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.1256.api.iml" filepath="$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.1256.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.1256.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.1256.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.1256.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.1256.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.iml" filepath="$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.api.iml" filepath="$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fr.mcopvp.mcopvp.MCO-PVP.main.iml" />
