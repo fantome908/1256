@@ -13,13 +13,13 @@ public class ItemMod {
     public static void init(){
         Jade = new Item().setUnlocalizedName("jade").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(References.MODID + ":jade");
         crystal = new Item().setUnlocalizedName("crystal").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(References.MODID + ":crystal");
-        etain = new Item() .setUnlocalizedName( "etain" ).setCreativeTab(CreativeTabs.tabMaterials).setTextureName(References.MODID + ":etain")
+        etain = new Item() .setUnlocalizedName( "etain" ).setCreativeTab(CreativeTabs.tabMaterials).setTextureName(References.MODID + ":etain");
     }
 
     public static void register(){
         GameRegistry.registerItem(Jade, "jade");
         GameRegistry.registerItem(crystal, "crystal");
-        GemeRegister.registerItem(etain, name:"etain");
+        GameRegistry.registerItem(etain, "etain");
     }
 
 }
