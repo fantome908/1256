@@ -38,9 +38,6 @@ public class MainMod {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
-        if(event.getSide().isClient()){
-            FMLCommonHandler.instance().bus().register(this);
-        }
     }
 
     @Mod.EventHandler

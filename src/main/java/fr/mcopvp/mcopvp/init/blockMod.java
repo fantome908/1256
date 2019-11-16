@@ -3,6 +3,7 @@ package fr.mcopvp.mcopvp.init;
 import cpw.mods.fml.common.registry.GameRegistry;
 import fr.mcopvp.mcopvp.References;
 import fr.mcopvp.mcopvp.blocks.blockBasique;
+import fr.mcopvp.mcopvp.blocks.blockBasiqueNoItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -14,10 +15,10 @@ public class blockMod {
     public static Block tin_ore;
 
     public static void init(){
-        jade_ore = new blockBasique(Material.rock).setBlockName("jade_ore").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":jade_ore").setHardness(3).setResistance(20.0f);
-        jade_block = new blockBasique(Material.rock).setBlockName("jade_block").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":jade_block").setHardness(3).setResistance(20.0f);
-        crystal_ore = new blockBasique(Material.rock).setBlockName("crystal_ore").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":crystal_ore").setHardness(3).setResistance(20.0f);
-        tin_ore = new blockBasique(Material.rock).setBlockName("tin_Ore").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":tin_ore").setHardness(3).setResistance(20.00f);
+        jade_ore = new blockBasique(Material.rock, ItemMod.Jade).setBlockName("jade_ore").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":jade_ore").setHardness(3).setResistance(20.0f);
+        jade_block = new blockBasiqueNoItem(Material.rock).setBlockName("jade_block").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":jade_block").setHardness(3).setResistance(20.0f);
+        crystal_ore = new blockBasique(Material.rock, ItemMod.crystal).setBlockName("crystal_ore").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":crystal_ore").setHardness(3).setResistance(20.0f);
+        tin_ore = new blockBasiqueNoItem(Material.rock).setBlockName("tin_Ore").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":tin_ore").setHardness(3).setResistance(20.00f);
     }
     public static void register(){
         GameRegistry.registerBlock(jade_ore, jade_ore.getUnlocalizedName().substring(5));
