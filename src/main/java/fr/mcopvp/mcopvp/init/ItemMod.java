@@ -24,4 +24,5 @@ public class ItemMod {
     private static void registerItemModels(){
         ModelLoader.setCustomModelResourceLocation (Jade , 0, new ModelResourceLocation (Jade.02255 + ":Jade", "inventory"));
 
+
 }
