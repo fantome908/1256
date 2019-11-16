@@ -29,11 +29,11 @@ public class MainMod {
     public void preInit(FMLPreInitializationEvent event){
         ready = true;
         Display.setTitle("|| MCO-PVP || MINECRAFT PVP FACTION ||");
+        ItemMod.init();
+        ItemMod.register();
         blockMod.init();
         blockMod.register();
         WorldRegister.mainRegistry();
-        ItemMod.init();
-        ItemMod.register();
     }
 
     @Mod.EventHandler
