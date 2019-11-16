@@ -15,7 +15,6 @@ public class blockMod {
         jade_ore = new blockBasique(Material.rock).setBlockName("jade_ore").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":jade_ore").setHardness(3).setResistance(20.0f);
         jade_block = new blockBasique(Material.rock).setBlockName("jade_block").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(References.MODID + ":jade_block").setHardness(3).setResistance(20.0f);
     }
-
     public static void register(){
         GameRegistry.registerBlock(jade_ore, jade_ore.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock(jade_block, jade_block.getUnlocalizedName().substring(5));
